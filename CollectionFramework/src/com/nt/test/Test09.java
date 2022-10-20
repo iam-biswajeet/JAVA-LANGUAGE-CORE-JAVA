@@ -1,12 +1,10 @@
-package com.nt.cj;
+package com.nt.test;
 
-import java.util.HashSet;
-import java.util.Set;
-import java.util.Vector;
+import java.util.LinkedHashSet;
 
-public class Test08 {
+public class Test09 {
 	public static void main(String[] args) {
-		HashSet set=new HashSet();
+		LinkedHashSet set=new LinkedHashSet();
 		set.add("A");
 		set.add("B");
 		set.add("C");

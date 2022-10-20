@@ -1,4 +1,4 @@
-package com.nt.cj;
+package com.nt.test;
 
 import java.util.Enumeration;
 import java.util.Vector;
