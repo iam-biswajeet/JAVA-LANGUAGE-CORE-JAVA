@@ -23,12 +23,12 @@ public class OrderNotKnownSerializationTest {
 		Dog2 d1=new Dog2();
 		Cat2 c1=new Cat2();
 		Rat2 r1=new Rat2();
-		FileOutputStream fos=new FileOutputStream("3.txt");
+		FileOutputStream fos=new FileOutputStream("5.ser");
 		ObjectOutputStream oos=new ObjectOutputStream(fos);
 		oos.writeObject(d1);
 		oos.writeObject(c1);
 		oos.writeObject(r1);
-		FileInputStream fis=new FileInputStream("3.txt");
+		FileInputStream fis=new FileInputStream("5.ser");
 		ObjectInputStream ois=new ObjectInputStream(fis);
 		Object obj=ois.readObject();
 		while(obj!=null) {

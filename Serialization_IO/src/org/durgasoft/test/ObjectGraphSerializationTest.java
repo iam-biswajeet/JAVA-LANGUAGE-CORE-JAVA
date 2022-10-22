@@ -19,10 +19,10 @@ class Rat3 implements Serializable{
 public class ObjectGraphSerializationTest {
 	public static void main(String[] args) throws Exception{
 		Dog3 d1=new Dog3();
-		FileOutputStream fos=new FileOutputStream("3.txt");
+		FileOutputStream fos=new FileOutputStream("3.ser");
 		ObjectOutputStream oos=new ObjectOutputStream(fos);
 		oos.writeObject(d1);
-		FileInputStream fis=new FileInputStream("3.txt");
+		FileInputStream fis=new FileInputStream("3.ser");
 		ObjectInputStream ois=new ObjectInputStream(fis);
 		Dog3 d2=(Dog3)ois.readObject();
 		System.out.println(d2.c.r.x);

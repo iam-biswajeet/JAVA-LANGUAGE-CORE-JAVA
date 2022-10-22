@@ -30,10 +30,10 @@ public class CustomizedSerializationTest {
 	public static void main(String[] args) throws Exception {
 		Account ac1=new Account();
 		System.out.println(ac1);
-		FileOutputStream fos=new FileOutputStream("4.txt");
+		FileOutputStream fos=new FileOutputStream("4.ser");
 		ObjectOutputStream oos=new ObjectOutputStream(fos);
 		oos.writeObject(ac1);
-		FileInputStream fis=new FileInputStream("4.txt");
+		FileInputStream fis=new FileInputStream("4.ser");
 		ObjectInputStream ois=new ObjectInputStream(fis);
 		Account ac2=(Account)ois.readObject();
 		System.out.println(ac2);

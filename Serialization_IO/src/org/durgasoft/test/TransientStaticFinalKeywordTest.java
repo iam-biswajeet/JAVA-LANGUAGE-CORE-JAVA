@@ -10,10 +10,10 @@ import java.io.Serializable;
 public class TransientStaticFinalKeywordTest{
 	public static void main(String[] args) throws IOException,ClassNotFoundException{
 		Cat c1=new Cat();
-		FileOutputStream fos=new FileOutputStream("1.txt");
+		FileOutputStream fos=new FileOutputStream("6.ser");
 		ObjectOutputStream oos=new ObjectOutputStream(fos);
 		oos.writeObject(c1);
-		FileInputStream fis=new FileInputStream("1.txt");
+		FileInputStream fis=new FileInputStream("6.ser");
 		ObjectInputStream ois=new ObjectInputStream(fis);
 		Cat c2=(Cat)ois.readObject();
 		System.out.println(c2.x+"  "+c2.y+"  "+c2.z);

@@ -22,12 +22,12 @@ public class MutipleObjectSerializedTest {
 		Dog1 d1=new Dog1();
 		Cat1 c1=new Cat1();
 		Rat1 r1=new Rat1();
-		FileOutputStream fos=new FileOutputStream("2.txt");
+		FileOutputStream fos=new FileOutputStream("2.ser");
 		ObjectOutputStream oos=new ObjectOutputStream(fos);
 		oos.writeObject(d1);
 		oos.writeObject(c1);
 		oos.writeObject(r1);
-		FileInputStream fis=new FileInputStream("2.txt");
+		FileInputStream fis=new FileInputStream("2.ser");
 		ObjectInputStream ois=new ObjectInputStream(fis);
 		Dog1 d2=(Dog1)ois.readObject();
 		System.out.println(d2.x);
