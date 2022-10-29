@@ -1,6 +1,6 @@
 package org.durgasoft.test;
 
-public class StaticMethodLocalInnerClass {
+public class StaticMethodLocalInnerClassTest {
 	int x=10;
 	static int y=20;
 	public static void m1() {
@@ -14,7 +14,7 @@ public class StaticMethodLocalInnerClass {
 		
 	}
 	public static void main(String[] args) {
-		new StaticMethodLocalInnerClass().m1();
+		new StaticMethodLocalInnerClassTest().m1();
 	}
 
 }

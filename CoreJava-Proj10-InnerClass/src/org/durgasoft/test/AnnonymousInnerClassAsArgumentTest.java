@@ -1,15 +1,14 @@
 package org.durgasoft.test;
 
-public class AnnonymousInnerClassExtendsClass {
+public class AnnonymousInnerClassAsArgumentTest {
 	public static void main(String[] args) {
-		Thread t=new Thread() {
+		new Thread(new Runnable() {
 			public void run() {
 				for(int i=0;i<10;i++) {
 					System.out.println("InnerClass");
 				}
 			}
-		};
-		t.start();
+		}).start();
 		for(int i=0;i<10;i++) {
 			System.out.println("main");
 		}
